@@ -1,2 +1,2 @@
 # KDawg.github.io
-genral code for my first website portfolio
+General code for my first website portfolio, not meant for reuse. If you see mess ups, I would love some help.

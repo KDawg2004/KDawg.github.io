@@ -45,20 +45,21 @@
             font-size: 1em;
             color: #000000;
         }
-        a.return {
-			display: inline-block;
-			margin-top: 20px;
-			text-decoration: none;
-			color: #000;
-			border: 1px solid #000;
-			padding: 5px 10px;
-		}
 
-		a.return:hover {
-			background-color: #000;
-			color: #fff;
-		}
-        
+        a.return {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #000;
+            border: 1px solid #000;
+            padding: 5px 10px;
+        }
+
+        a.return:hover {
+            background-color: #000;
+            color: #fff;
+        }
+
         .form-input:focus {
             outline: none;
             border-color: #000000;
@@ -96,6 +97,23 @@
         .dropdown-item:active {
             position: relative;
             top: 3px;
+        }
+
+        .contact-info {
+            color: #000000;
+            text-align: center;
+            margin-top: 20px;
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .contact-info li {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .container {
+            color: #000000;
         }
     </style>
     <script type="text/javascript">
@@ -164,15 +182,25 @@
                         <a class="dropdown-item" href="#" tolang="de">German</a>
                     </div>
                 </div>
-		    <div class="col-sm"></div>
+            </div>
+            <div class="col-sm"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm"></div>
+            <div class="col-sm">
                 <ul class="contact-info">
-		        <li><b>KAEVIN BARTA</b></li>
-		        <li>503-576-1216</li>
-		        <li>Kaevin.T.Barta@gmail.com</li>
-		        <li>178 AV Davis RD</li>
-		        <li>Oregon City, OR 97045</li>
-	            </ul>
-		    <div class="col-sm"></div>
+                    <li><b>KAEVIN BARTA</b></li>
+                    <li>503-576-1216</li>
+                    <li>Kaevin.T.Barta@gmail.com</li>
+                    <li>178 AV Davis RD</li>
+                    <li>Oregon City, OR 97045</li>
+                </ul>
+            </div>
+            <div class="col-sm"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm"></div>
+            <div class="col-sm">
                 <h1 id="formHeading">Contact Form</h1>
                 <div class="form-container">
                     <form action="">
@@ -188,5 +216,3 @@
     <a class="return" href="index.html">Back to Index Page</a>
 </body>
 </html>
-
-

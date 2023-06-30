@@ -68,7 +68,7 @@
         .translate {
             margin-left: auto;
             margin-top: 50px;
-            text-align: center;
+            text-align: left;
             font-weight: 100;
             font-size: 2.8em;
             width: 50%;
@@ -77,7 +77,18 @@
         .translate-option {
             width: 50%;
         }
+        
+        .fake-send-button {
+            background-color: #000000;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
 
+        
         .dropdown-toggle {
             background-color: #000000;
             color: #ffffff;
@@ -188,6 +199,7 @@
         <div class="row">
             <div class="col-sm"></div>
             <div class="col-sm">
+                <h1 id="formHeading">Contact Information</h1>
                 <ul class="contact-info">
                     <li><b>KAEVIN BARTA</b></li>
                     <li>503-576-1216</li>
@@ -207,6 +219,7 @@
                         <input type="text" name="name" class="form-input" placeholder="Name" required />
                         <input type="text" name="contactNo" class="form-input" placeholder="Contact No." required />
                         <input type="email" name="email" class="form-input" placeholder="Email" required />
+                        <button type="submit" class="fake-send-button">Send</button>
                     </form>
                 </div>
             </div>

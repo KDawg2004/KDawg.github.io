@@ -1,28 +1,32 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>Test Webpage</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <script src="script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Test Webpage</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Include your custom CSS -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- Navbar brand -->
+                <a class="navbar-brand" href="index.html">Logo</a>
+                <!-- Navbar toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- Navbar links -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="logo">
-                            <a href="index.html">logo</a>
-                        </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
@@ -30,7 +34,8 @@
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Projects</a>
                             <ul class="dropdown-menu">
                                 <li>
                                     <a class="dropdown-item" href="projects.html">Projects</a>
@@ -51,14 +56,17 @@
     </header>
 
     <main>
-        <p>This is a <em>wonderful</em> website created by, yours truly.</p>
+        <p>This is a <em>wonderful</em> website created by yours truly.</p>
 
         <h2>Who is Kaevin Barta?</h2>
-        
-
-        <p>“Any code of your own that you haven’t looked at for six or more months might as well have been written by someone else.” — Eagleson’s Law</p>
+        <!-- Kaevin Barta's quote -->
+        <blockquote>
+            <p>“Any code of your own that you haven’t looked at for six or more months might as well have been
+                written by someone else.” — Eagleson’s Law</p>
+        </blockquote>
 
         <div class="row">
+            <!-- Scroll buttons -->
             <div class="col">
                 <h3 class="rounded-bg">Education</h3>
                 <button onclick="scrollToSection('education', 400)">Scroll</button>
@@ -73,73 +81,90 @@
             </div>
         </div>
 
-        <br><img src="https://tse4.mm.bing.net/th?id=OIP.YdOcJBbcRdzH3XWEGlNB6AHaER&pid=Api&P=0&h=180"><br>
-        <h2 class="rounded-bg" id="About">About me</h2>
-        <p>I grew up in the green state of <em>Oregon</em>. Oregon's booming tech industry has created the perfect seed to start growing my dev skils. With many classes for computer science offered at my highschool(Oregon City High) I found my passion earlier then most. Im a highly motivated and detail-oriented computer science student seeking a Project Engineer position. Offering a strong foundation in programming, problem-solving skills, and a passion for delivering innovative solutions. Eager to contribute to challenging projects and collaborate with a team of skilled professionals.</p><br>
-        <br><img src="https://www.nursingexplorer.com/img/colleges/or/1817.jpg?1596120694"><br>
-        <h2 class="rounded-bg" id="education">Education:</h2>
-        <ul class="education-info">
-            <li><b>Pursuing Bachelor's Degree in Computer Science</b></li>
-            <li>Completed coursework in Data Structures and Algorithms</li>
-            <li>Relevant coursework: Visual Basic and Intro to Programming </li>
-            <li>Attends: Clackamas Community College, Oregon City, OR</li>
-            <li>Expected Graduation: 2026 </li>
-        </ul>
-        <br>
-        <br><img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTk5Mzc2ZTZkODk1Y2NlOGU1ZDZkYmIxMjZjNzAyZDM5NTE3ZWVlMyZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/SS8CV2rQdlYNLtBCiF/giphy.gif" style=width: 150px; height: 200px;><br>
-        <h2 class="rounded-bg" id="skills">Skills:</h2>
-        <ul class="skills-info">
-            <li><b>Programming Languages: C++, Visual Basic, some baseline phthon, javascript and html,</b></li>
-            <li>Software Development: Object-Oriented Programming (OOP), Agile Methodology </li>
-            <li>Problem-Solving: Analytical thinking, logical reasoning, attention to detail</li>
-            <li>Teamwork: Collaboration, effective communication, adaptability</li>
-            <li>Technical Proficiency: SFML library, Visual Studio, file input/output </li>
-        </ul>
+        <!-- About me section -->
+        <section>
+            <h2 class="rounded-bg" id="about">About me</h2>
+            <p>I grew up in the green state of <em>Oregon</em>. Oregon's booming tech industry has created the perfect
+                seed to start growing my dev skills. With many classes for computer science offered at my high school
+                (Oregon City High), I found my passion earlier than most. I'm a highly motivated and detail-oriented
+                computer science student seeking a Project Engineer position. Offering a strong foundation in
+                programming, problem-solving skills, and a passion for delivering innovative solutions. Eager to
+                contribute to challenging projects and collaborate with a team of skilled professionals.</p>
+            <img src="https://tse4.mm.bing.net/th?id=OIP.YdOcJBbcRdzH3XWEGlNB6AHaER&pid=Api&P=0&h=180"
+                alt="Oregon" width="300" height="200">
+        </section>
 
-        <br><img src="https://store-images.microsoft.com/image/apps.62911.9007199266266111.633be1ff-8267-43be-be70-83f7ca2653ed.c52162df-ae8c-4431-be5c-1eeff8252147?mode=scale&q=90&h=270&w=270&background=%23838383" style=width: 150px; height: 200px;><br>
-        <h2 class="rounded-bg" id="projects">Projects:</h2>
-        <ul class="project-info">
-            <li><b>Top Projects: Translation API sourced from google translate, This website, Asteriods the game and Knights tour recusion.</b></li>
-            <li>Future Projects: Planning on helping out construction for web development, this will include creating html, javascript and css files for them. </li>
+        <!-- Education section -->
+        <section>
+            <h2 class="rounded-bg" id="education">Education</h2>
+            <ul class="education-info">
+                <li><strong>Pursuing Bachelor's Degree in Computer Science</strong></li>
+                <li>Completed coursework in Data Structures and Algorithms</li>
+                <li>Relevant coursework: Visual Basic and Intro to Programming </li>
+                <li>Attends: Clackamas Community College, Oregon City, OR</li>
+                <li>Expected Graduation: 2026 </li>
+            </ul>
+            <img src="https://www.nursingexplorer.com/img/colleges/or/1817.jpg?1596120694"
+                alt="Clackamas Community College" width="300" height="200">
+        </section>
+
+        <!-- Skills section -->
+        <section>
+            <h2 class="rounded-bg" id="skills">Skills</h2>
+            <ul class="skills-info">
+                <li><strong>Programming Languages:</strong> C++, Visual Basic, some baseline Python, JavaScript, and
+                    HTML</li>
+                <li><strong>Software Development:</strong> Object-Oriented Programming (OOP), Agile Methodology</li>
+                <li><strong>Problem-Solving:</strong> Analytical thinking, logical reasoning, attention to detail</li>
+                <li><strong>Teamwork:</strong> Collaboration, effective communication, adaptability</li>
+                <li><strong>Technical Proficiency:</strong> SFML library, Visual Studio, file input/output</li>
+            </ul>
+            <img src="https://store-images.microsoft.com/image/apps.62911.9007199266266111.633be1ff-8267-43be-be70-83f7ca2653ed.c52162df-ae8c-4431-be5c-1eeff8252147?mode=scale&q=90&h=270&w=270&background=%23838383"
+                alt="Technical Proficiency" width="300" height="200">
+        </section>
+
+        <!-- Projects section -->
+        <section>
+            <h2 class="rounded-bg" id="projects">Projects</h2>
+            <ul class="project-info">
+                <li><strong>Top Projects:</strong> Translation API sourced from Google Translate, This website, Asteroids
+                    the game, and Knights tour recursion.</li>
+                <li><strong>Future Projects:</strong> Planning on helping out construction for web development, this
+                    will include creating HTML, JavaScript, and CSS files for them.</li>
+            </ul>
             <a class="projects" href="projects.html">To Project Page</a>
-        </ul>
+        </section>
 
-        <div class="row">
-            <div class="darkBG col-sm-12">
-                <span class="visually-hidden">Hidden Text</span>
-            </div>
-        </div>       
-
-        <h2>Future Asprirations</h2>
-
-        <p>I actively seek out opportunities to expand my knowledge and expertise in relevant areas. Whether it's attending workshops, participating in leet code questions, or enrolling in in-person/online courses, I consistently pursue avenues that allow me to enhance my skill set. By staying informed about the latest industry trends, technologies, and best practices, I ensure that I bring the most current and valuable insights to my work.</p>
-
-        <p>Additionally, I believe in sharing knowledge and fostering a culture of learning within teams and organizations. I enjoy mentoring colleagues, conducting workshops, and facilitating knowledge-sharing sessions to empower others to enhance their skills and contribute effectively to the collective growth of the team.</p>
-
-        <p>Continuous learning not only helps me adapt to changing demands but also enables me to propose innovative solutions and identify new opportunities. I embrace challenges as opportunities for growth and am eager to take on new projects that stretch my abilities and broaden my horizons.</p>
-
-        <p>By emphasizing my commitment to professional development, I strive to create a learning mindset that fuels personal and organizational success. I am excited to join a company that values ongoing learning and growth, where I can contribute my knowledge and skills while continuously expanding my capabilities.</p>
-
+        <!-- Future aspirations -->
+        <section>
+            <h2>Future Aspirations</h2>
+            <p>I actively seek out opportunities to expand my knowledge and expertise in relevant areas. Whether it's
+                attending workshops, participating in leetcode questions, or enrolling in in-person/online courses, I
+                consistently pursue avenues that allow me to enhance my skill set. By staying informed about the latest
+                industry trends, technologies, and best practices, I ensure that I bring the most current and valuable
+                insights to my work.</p>
+            <p>Additionally, I believe in sharing knowledge and fostering a culture of learning within teams and
+                organizations. I enjoy mentoring colleagues, conducting workshops, and facilitating knowledge-sharing
+                sessions to empower others to enhance their skills and contribute effectively to the collective growth
+                of the team.</p>
+            <p>Continuous learning not only helps me adapt to changing demands but also enables me to propose innovative
+                solutions and identify new opportunities. I embrace challenges as opportunities for growth and am eager
+                to take on new projects that stretch my abilities and broaden my horizons.</p>
+            <p>By emphasizing my commitment to professional development, I strive to create a learning mindset that fuels
+                personal and organizational success. I am excited to join a company that values ongoing learning and
+                growth, where I can contribute my knowledge and skills while continuously expanding my capabilities.</p>
+        </section>
     </main>
 
-    <div class="row">
-        <div class="darkBG col-sm-12">
-            <span class="visually-hidden">Hidden Text</span>
-        </div>
-    </div>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="information.html">About</a></li>
-            <li><a href="information.html">Links</a></li>
-            <li><a href="https://leetcode.com/Kbarta1233/">LeetCode Profile</a></li>
-        </ul>
-    </nav>
-
+    <!-- Footer -->
     <footer>@2023 My Site</footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- Include Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <!-- Include your custom JS -->
+    <script src="script.js"></script>
 </body>
-</html> 
+
+</html>

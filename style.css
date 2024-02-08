@@ -17,6 +17,19 @@
     text-indent: -9999px;
 }
 
+.text-box-button {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%; /* Make the buttons circular */
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.text-box-button:hover {
+    transform: scale(1.1); /* Scale the button up when hovered */
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.5;

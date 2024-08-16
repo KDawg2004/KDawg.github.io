@@ -30,12 +30,12 @@ body, html {
 }
 
 .parallax__layer--back {
-    transform: translateZ(-1px) scale(2);
+    transform: translateZ(-2px) scale(3);
     z-index: 1;
 }
 
 .parallax__layer--base {
-    transform: translateZ(0px) scale(1);
+    transform: translateZ(-10px) scale(8);
     z-index: 2;
 }
 

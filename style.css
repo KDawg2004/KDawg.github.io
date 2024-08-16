@@ -6,6 +6,50 @@
 }
 
 /* Global styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.parallax {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    perspective: 1px;
+    transform-style: preserve-3d;
+}
+
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.parallax__layer--back {
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+}
+
+.parallax__layer--base {
+    transform: translateZ(0px) scale(1);
+}
+
+.parallax img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+header, main, footer {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent background to highlight content */
+}
 
 .logo a {
     background-image: url("coffee.png");

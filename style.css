@@ -38,7 +38,7 @@ body, html {
 }
 
 .parallax__layer--base {
-    transform: translateZ(-10px) scale(8);
+    transform: translateZ(-10px) scale(8)translateY(1020px);
     z-index: 2;
 }
 

@@ -21,8 +21,8 @@ body, html {
     transform-style: preserve-3d;
 }
 .custom-img {
-    width: 310px;
-    height: 180px;
+   width: auto;
+  height: auto;
 }
 .parallax__layer {
     position: absolute;

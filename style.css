@@ -20,7 +20,10 @@ body, html {
     perspective: 1px;
     transform-style: preserve-3d;
 }
-
+.custom-img {
+    width: 310px;
+    height: 180px;
+}
 .parallax__layer {
     position: absolute;
     top: 0;

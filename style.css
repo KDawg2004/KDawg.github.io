@@ -31,11 +31,12 @@ body, html {
 
 .parallax__layer--back {
     transform: translateZ(-1px) scale(2);
-    z-index: -1;
+    z-index: 1;
 }
 
 .parallax__layer--base {
     transform: translateZ(0px) scale(1);
+    z-index: 2;
 }
 
 .parallax img {
@@ -46,7 +47,7 @@ body, html {
 
 header, main, footer {
     position: relative;
-    z-index: 1;
+    z-index: 3;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.8); /* Transparent background to highlight content */
 }
